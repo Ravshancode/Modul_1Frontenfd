@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML jadvallar</title>
+</head>
+<style>
+  span{
+ color: red;
+ font-weight: bold;
+}
+</style>
+
+<body>
+  <div>
+    <p>jadval <span>table</span> tegi bilan boshlanadi
+      va ichida qator <span>tr</span>
+      va uni ichida <span>th</span> yoki <span>td</span>
+      boladi
+    </p>
+    <table border="1" width="800"><!--jadaval korinishi-->
+    <tr><!--qator-->
+      <th>T/r</th><!-- qalin va markazda turadi-->
+      <th> nomi</th>
+      <th> rangi</th>
+      <th> narxi</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Nexiya</td>
+      <td>Qora</td>
+      <td>5000$</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Cobld</td>
+      <td>oq</td>
+      <td>10000$</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Malibu</td>
+      <td>Oq</td>
+      <td>45000$</td>
+    </tr>
+  </table>
+  <hr>
+  <div>
+    <h3>Murakkab jadvallar</h3>
+    <p>
+      buning uchun  yacheykalar ichiga alohida atribud yozamiz. 
+    </p>
+    <p><span>rowspan="n"</span> => bu vertikal(Y o'qi bo'ylab) n ta yacheykani birlashtir degan buyruq</p>
+    <p><span>colspan="n"</span> => bu gorizantal(X o'qi bo'ylab) n ta yacheykani birlashtir degan buyruq</p>
+
+    <table border="1" width="800">
+      <tr>
+        <th rowspan="2">mevalar</th>
+        <th colspan="2">Region</th>
+      </tr>
+      <tr>
+        <td>O'zbek</td>
+        <td>chet elda</td>
+      </tr>
+      <tr>
+        <td>Olma</td>
+        <td>+</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>Banan</td>
+        <td>-</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>Kiwi</td>
+        <td>-</td>
+        <td>+</td>
+      </tr>
+    </table>
+  </div>
+</div>
+  
+</body>
+</html>
